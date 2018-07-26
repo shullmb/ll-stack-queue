@@ -1,4 +1,4 @@
-from LinkedList import Node
+# from LinkedList import Node
 from LinkedList import LinkedList
 
 class Stack:
@@ -32,7 +32,8 @@ class Queue:
     return self.store
   
   def dequeue(self):
-    self.store.delete_at_head()
+    data = self.store.delete_at_head()
+    return data
 
   def print_queue(self):
     self.store.print_list()
@@ -45,14 +46,5 @@ queue.enqueue('three')
 queue.enqueue('four')
 queue.enqueue('five')
 
-queue.dequeue()
-queue.print_queue()
-queue.dequeue()
-queue.print_queue()
-queue.dequeue()
-queue.print_queue()
-queue.dequeue()
-queue.print_queue()
-
-test= queue.dequeue()
+test = queue.dequeue()
 print(test)
