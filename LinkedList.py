@@ -87,4 +87,4 @@ ll.add("four")
 ll.add("five")
 
 test = ll.delete_at_head()
-print(test) # returns payload
+# print(test) # returns payload
